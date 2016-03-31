@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="screen.css" type="text/css"/>
+	<script type="text/javascript" src="Formval.js"></script> 
+        <title>Frank's Franks</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class='outside'>
+        <img id='leftLogo' src='pictures/logo.png' alt='Red Sox Logo' />
+        <!--
+        <img id='centerLogo' src='pictures/redsox_text.jpg' alt='Red Sox text logo' />
+        -->
+        <h1 class='centertext titlebar'>Get Frank's Fenway Franks Delivered Right to Your Seat</h1>
+        
+        <img id='rightLogo' src='pictures/logo.png' alt='Red Sox Logo' />
+        <br>
+        <nav class='centertext'>
+            <a href="index.html">Sign in page</a>
+        </nav>
+        <div class='content'>
+            <p class='half'>
+                <img width="90%" src='pictures/fenway.jpg' alt='Fenway' />
+            </p>
+            <div class='half'>
+                <h2>Create user:</h2>
+                <form name='signin' method='post' action='http://wldelucia.com/final/createuser.php' onSubmit="return userVal(this)">
+                    Username: <input name="myusername" id="myusername" /><br>
+                    Password: <input name="mypassword" id="mypassword" type="password"/><br>
+                    Retype password: <input name="mypassword2" id="mypassword2" type="password"/><br>
+                    First name:  <input name="fName" id="firstName" /><br>
+                    Last name:  <input name="lName" id="lastName" /><br>
+                    D.O.B :  <input type="date" name="dob" id="dob" /><br>
+                    Credit card number: <input type="number" name="creditcard" min="1000000000000000" max="9999999999999999" id="creditcard"/><br>
+                    Email:  <input type="email" name="email" id="email" /><br>
+                    <input name="Submit1" type="submit" value="submit" />
+                </form>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
+
+</html>
